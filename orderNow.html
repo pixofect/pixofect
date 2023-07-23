@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <title>Pixofect</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/dropzone.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+	
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+	
+
+</head><!--/head-->
+
+<body>
+
+    <header id="header">
+         <!-- div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div--><!--/.top-bar-->
+        
+
+        <nav class="navbar navbar-inverse sticky" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                       
+						<li><a href="pricing.html">Pricing</a></li> 
+                        <li class="active"><a href="orderNow.html">Order Now</a></li> 
+                        <li><a href="contact-us.html">Contact</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+
+             
+			 <div class="costDisplay">
+			     <label>Your Total Cost - $350</label>
+			 </div>
+
+
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+
+
+
+    <section id="orderNow">
+        <div class="center" style="padding-bottom:5px;">                
+            <h2>Order Now</h2>
+            <p class="lead">You can select your package and place your order here...</p>
+        </div>
+
+
+
+       <!-- SELECT TAB OPTIONS -->
+	   <div class="container">
+	   <div class="wizard cusWiz">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs myCustNvTabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="1.Basic Details">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" id="stepRd2" aria-controls="step2" role="tab" title="2.Select Package">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-gift"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="3.Select Options">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-th-list"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="4.Pay & Place Order">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-usd"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+<form novalidate>
+            
+                <div class="tab-content">
+
+                    
+                    
+
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3>1.Basic Details</h3>
+                        
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" class="form-control" id="name" required placeholder="Enter Name">
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control" id="email" required placeholder="Enter Email">
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="Project">Name your Project:</label>
+								<input type="text" class="form-control" id="Project">
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="Project">Pages:</label>
+								<div class="pagesDv">
+								    <label>Homepage +</label>
+									<select class="form-control" style="width:80px; display:inline-block;">
+									     <option>0</option>
+									</select>
+									<label>Inner Page/s</label>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="note">Give Information/Note:</label>
+								<textarea class="form-control"></textarea>
+							</div>
+						</div>
+
+
+					    </form>
+
+
+						<div class="col-md-12">
+							<div class="form-group">
+							     <label for="note">Upload your Files here:</label>
+								 <!--<div id="dropzone">
+										  <form action="/upload" class="dropzone needsclick" id="demo-upload">
+												  <div class="dz-message needsclick">Drop files here or click to upload.</div>
+										  </form>
+								 </div>	-->
+							</div>
+						</div>
+
+
+
+                        <div class="clear"></div>
+
+						
+                        <ul class="list-inline pull-right">
+                            <li><button type="submit" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+
+						
+
+                    </div>
+
+</form>
+
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3>2.Select Package</h3>
+                        
+						<div class="row">
+						<div class="col-md-6">
+							<div class="packDvNw">
+							<form class="form">
+								  <div class="radio">
+									   <label for="opt1"><input type="radio" id="opt1" name="a"> <span class="titlePack">PSD to Responsive HTML</span><span class="amtSpan">$ 149</span></label>
+									   
+								  </div>
+								   <div class="radio">
+									   <label for="opt2"><input type="radio" id="opt2" name="a"> <span class="titlePack">PSD to Responsive Wordpress</span><span class="amtSpan">$ 199</span></label>
+								  </div>
+								  <div class="radio">
+									   <label for="opt3"><input type="radio" id="opt3" name="a"> <span class="titlePack">PSD to Responsive Joomla</span><span class="amtSpan">$ 249</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt4"><input type="radio" id="opt4" name="a"> <span class="titlePack">PSD to Responsive Email</span><span class="amtSpan">$ 109</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt5"><input type="radio" id="opt5" name="a"> <span class="titlePack">PSD to Responsive Magento</span><span class="amtSpan">$ 399</span></label>
+								  </div>
+
+
+								  <div class="radio">
+									   <label for="opt6"><input type="radio" id="opt6" name="a"> <span class="titlePack">PSD to Responsive Drupal</span><span class="amtSpan">$ 349</span></label>
+								  </div>
+
+								   <div class="radio">
+									   <label for="opt7"><input type="radio" id="opt7" name="a"> <span class="titlePack">PSD to Responsive Shopify</span><span class="amtSpan">$ 399</span></label>
+								  </div>
+
+								   <div class="radio">
+									   <label for="opt15"><input type="radio" id="opt15" name="a"> <span class="titlePack">Graphic Design</span><span class="amtSpan">$ 45</span></label>
+								  </div>
+							</form>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-6">
+							<div class="packDvNw">
+							<form class="form">
+								  <div class="radio">
+									   <label for="opt8"><input type="radio" id="opt8" name="a"> <span class="titlePack">PSD to HTML</span><span class="amtSpan">$ 45</span></label>
+								  </div>
+								   <div class="radio">
+									   <label for="opt9"><input type="radio" id="opt9" name="a"> <span class="titlePack">PSD to HTML 5 + CSS3</span><span class="amtSpan">$ 95</span></label>
+								  </div>
+								  <div class="radio">
+									   <label for="opt10"><input type="radio" id="opt10" name="a"> <span class="titlePack">PSD To Wordpress</span><span class="amtSpan">$ 99</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt11"><input type="radio" id="opt11" name="a"> <span class="titlePack">PSD to Joomla</span><span class="amtSpan">$ 149</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt12"><input type="radio" id="opt12" name="a"> <span class="titlePack">PSD to Email</span><span class="amtSpan">$ 49</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt13"><input type="radio" id="opt13" name="a"> <span class="titlePack">PSD to Drupal</span><span class="amtSpan">$ 249</span></label>
+								  </div>
+
+								   <div class="radio">
+									   <label for="opt14"><input type="radio" id="opt14" name="a"> <span class="titlePack">PSD to Magento</span><span class="amtSpan">$ 299</span></label>
+								  </div>
+
+								  <div class="radio">
+									   <label for="opt16"><input type="radio" id="opt16" name="a"> <span class="titlePack">PSD to Shopify</span><span class="amtSpan">$ 399</span></label>
+								  </div>
+
+							</form>
+							</div>
+						</div>
+
+
+						</div> <!-- row -->
+                         
+                        <div class="clear"></div>
+
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step" style="margin-top:0;">Save and continue</button></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3>4.Select Options</h3>
+
+
+                        <div class="optsNwDv">
+						    <div class="row">
+							      <div class="col-sm-12 col-md-12">
+                        
+									   
+<!-- opt 1 -->
+<h3 class="laytitle">Layout Options</h3>								       
+<div class="panel-group cusPanel" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Layout Width</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt20"><input type="radio" id="opt20" name="a"> <span class="titlePack">Fixed</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt21"><input type="radio" id="opt21" name="a"> <span class="titlePack">Liquid</span><span class="amtSpan">$29</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Layout Horizontal Alignment</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt22"><input type="radio" id="opt22" name="b"> <span class="titlePack">Left</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt23"><input type="radio" id="opt23" name="b"> <span class="titlePack">Center</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt24"><input type="radio" id="opt24" name="b"> <span class="titlePack">Right</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt25"><input type="checkbox" id="opt25"> <span class="titlePack">Header/Footer width Stretch</span><span class="amtSpan">$9</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Vertical Alignment</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt26"><input type="radio" id="opt26" name="c"> <span class="titlePack">Top</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt27"><input type="radio" id="opt27" name="c"> <span class="titlePack">Middle</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt28"><input type="radio" id="opt28" name="c"> <span class="titlePack">Bottom</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt29"><input type="checkbox" id="opt29"> <span class="titlePack">Sticky Footer</span><span class="amtSpan">$9</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Sticky Footer</span><span class="amtSpan">$9</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+</div>
+<!-- opt 1 -->
+
+
+
+
+
+
+<!-- opt 2 -->
+<h3 class="laytitle2">Compatibility Options</h3>								       
+<div class="panel-group cusPanel" id="accordion3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion3" href="#collapse00">
+        Browser Device</a>
+      </h4>
+    </div>
+    <div id="collapse00" class="panel-collapse collapse in">
+      <div class="panel-body cusPanelbody">
+	          <div class="checkbox mrgNwDv">
+				   <label for="opt01"><input type="checkbox" id="opt01"> <span class="titlePack">Iphone, Ipad and Android Device</span><span class="amtSpan">$29</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt02"><input type="checkbox" id="opt02"> <span class="titlePack">Windows 7 and BlackBerry Device</span><span class="amtSpan">$29</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+  </div>
+<!-- opt 2 -->
+
+
+
+
+
+<!-- opt 3 -->
+<h3 class="laytitle2">Advance Options</h3>								       
+<div class="panel-group cusPanel" id="accordion2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse11">
+        Font Implementation</a>
+      </h4>
+    </div>
+    <div id="collapse11" class="panel-collapse collapse in">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt31"><input type="radio" id="opt31" name="a"> <span class="titlePack">No</span><span class="amtSpan"></span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt32"><input type="radio" id="opt32" name="a"> <span class="titlePack">google-font</span><span class="amtSpan">$9</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt33"><input type="radio" id="opt33" name="a"> <span class="titlePack">@font-face</span><span class="amtSpan">$9</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt34"><input type="radio" id="opt34" name="a"> <span class="titlePack">Cufon</span><span class="amtSpan">$19</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt35"><input type="checkbox" id="opt35"> <span class="titlePack">Mouseover Effects (Rollovers)</span><span class="amtSpan">Free</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse21">
+        Implement Dynamic Menus</a>
+      </h4>
+    </div>
+    <div id="collapse21" class="panel-collapse collapse">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt36"><input type="radio" id="opt36" name="b"> <span class="titlePack">No</span><span class="amtSpan"></span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt37"><input type="radio" id="opt37" name="b"> <span class="titlePack">One-Level Drop-Down Menu</span><span class="amtSpan">$9</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt38"><input type="radio" id="opt38" name="b"> <span class="titlePack">Multi-Level Drop-Down Menu</span><span class="amtSpan">$19</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt39"><input type="checkbox" id="opt39"> <span class="titlePack">Jquery Implementation</span><span class="amtSpan">$25</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt40"><input type="checkbox" id="opt40"> <span class="titlePack">Font Resize</span><span class="amtSpan">$9</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse31">
+        W3C Standards</a>
+      </h4>
+    </div>
+    <div id="collapse31" class="panel-collapse collapse">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt26"><input type="radio" id="opt26" name="c"> <span class="titlePack">W3C Valid HTML 4.01</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt27"><input type="radio" id="opt27" name="c"> <span class="titlePack">W3C Valid XHTML 1.0 Transitional</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt28"><input type="radio" id="opt28" name="c"> <span class="titlePack">W3C Valid XHTML 1.0 Strict</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt28"><input type="radio" id="opt28" name="c"> <span class="titlePack">W3C Valid HTML5</span><span class="amtSpan">$80</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt29"><input type="checkbox" id="opt29"> <span class="titlePack">Table-less Coding</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Favicon</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">CSS Sprite</span><span class="amtSpan">$29</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+
+
+
+ <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse41">
+        CSS Frameworks</a>
+      </h4>
+    </div>
+    <div id="collapse41" class="panel-collapse collapse">
+      <div class="panel-body cusPanelbody">
+	          <div class="radio mrgNwDv">
+				   <label for="opt36"><input type="radio" id="opt36" name="b"> <span class="titlePack">No</span><span class="amtSpan">Free</span></label>
+			  </div>
+	          <div class="radio mrgNwDv">
+				   <label for="opt26"><input type="radio" id="opt26" name="c"> <span class="titlePack">Twitter bootstrap</span><span class="amtSpan">$59</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt27"><input type="radio" id="opt27" name="c"> <span class="titlePack">Materialize CSS</span><span class="amtSpan">$79</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt28"><input type="radio" id="opt28" name="c"> <span class="titlePack">Materialize CSS</span><span class="amtSpan">$79</span></label>
+			  </div>
+			  <div class="radio mrgNwDv">
+				   <label for="opt28"><input type="radio" id="opt28" name="c"> <span class="titlePack">Semantic UI</span><span class="amtSpan">$79</span></label>
+			  </div>
+			  <hr />
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt29"><input type="checkbox" id="opt29"> <span class="titlePack">CSS Reset</span><span class="amtSpan">Free</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Print CSS</span><span class="amtSpan">$19</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Contact Form Implementation</span><span class="amtSpan">$25</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Font Awesome</span><span class="amtSpan">$9</span></label>
+			  </div>
+			  <div class="checkbox mrgNwDv">
+				   <label for="opt30"><input type="checkbox" id="opt30"> <span class="titlePack">Contact Form Implementation</span><span class="amtSpan">$25</span></label>
+			  </div>
+	  </div>
+    </div>
+  </div>
+
+
+
+</div>
+<!-- opt 3 -->
+
+
+
+
+
+
+								  </div>
+							</div> <!-- row -->
+						</div>
+
+
+						<div class="clear"></div>
+
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step" style="margin-top:0;">Save and continue</button></li>
+                        </ul>
+                    </div>
+
+					
+
+
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Complete</h3>
+                        <p>You have successfully completed all steps.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+         
+        </div>
+		</div>
+	   <!-- SELECT TAB OPTIONS -->
+
+
+
+        
+    </section>  <!--order now -->
+
+    
+
+
+
+
+<section id="bottom" style="padding-top:30px; padding-bottom:30px;">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="widget">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Order Now</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+               
+
+
+
+				 <div class="col-md-6 col-sm-6">
+                    <div class="widget">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#">pixofect@gmail.com</a></li>
+                            <li><a href="#">sales@pixofect.com</a></li>
+                            
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+
+               
+
+               
+            </div>
+						<div class="clearfix"></div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue" style="text-align:center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    &copy; 2019 <a target="_blank" href="#">Pixofect</a>. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+
+<!-- login -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+		
+		<div class="loginmodal-container" id="loginTab">
+			<h1>Login to Your Account</h1><br>
+		  <form>
+			<input type="text" name="user" placeholder="Username">
+			<input type="password" name="pass" placeholder="Password">
+			<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+		  </form>
+			
+		  <div class="login-help">
+			 <a href="#" id="forgotPassId">Forgot Password</a>
+		  </div>
+		</div>
+
+
+
+		<div class="loginmodal-container" id="forpassTab" style="display:none;">
+			<h1>Forgot Password</h1><br>
+		  <form>
+			<input type="password" name="oldPass" placeholder="Old Password">
+			<input type="password" name="newPass" placeholder="New Password">
+			<input type="password" name="CfmnewPass" placeholder="Confirm New Password">
+			<input type="submit" name="login" class="login loginmodal-submit" value="Submit">
+		  </form>
+			
+		  <div class="login-help">
+			 <a href="#" id="BckLoginId">Back to Login</a>
+		  </div>
+		</div>
+
+
+	</div>
+</div>
+<!-- login -->
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jBootValidator.js"></script>
+
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/dropzone.js"></script>
+
+
+
+<script>
+    var callback = function (form, e) {
+        e.preventDefault();
+        
+        return false;
+    };
+    $('form').jBootValidator({validateOnSubmit: true, validationCallback: callback});
+</script>
+
+
+
+<script>
+$(document).ready(function() {
+
+
+$("#stepRd2").click(function() {
+
+   var fName = $("#name").val();
+   var eMail = $("#email").val();
+
+   if(fName == "" ||  eMail=="" ){
+      $(this).attr("data-toggle","");
+   }
+   else 
+	{
+      $(this).attr("data-toggle","tab");
+	}
+});
+
+
+$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
+
+
+
+$('.nav-tabs > li a[title]').tooltip();
+
+$("#forgotPassId").on( "click", function( event ) {
+    $("#forpassTab").slideDown();
+	$("#loginTab").hide();
+});
+
+
+$("#BckLoginId").on( "click", function( event ) {
+    $("#forpassTab").hide();
+	$("#loginTab").slideDown();
+});
+
+
+});
+</script>
+
+
+
+
+</body>
+</html>
